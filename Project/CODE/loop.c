@@ -22,7 +22,7 @@ void duty_10ms(void)
     {
         duty -= 10;
     }
-    pwm_duty(GPIO2, GPIO_PIN_4, duty);
+    pwm_duty(GPIO2, GPIO_PIN_5,duty);
 
 }
 void duty_100ms(void)

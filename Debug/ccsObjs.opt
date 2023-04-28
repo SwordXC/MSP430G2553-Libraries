@@ -1,6 +1,7 @@
 "./Libraries/libraries/adc.obj"
 "./Libraries/libraries/exti.obj"
 "./Libraries/libraries/gpio.obj"
+"./Libraries/libraries/i2c.obj"
 "./Libraries/libraries/pit.obj"
 "./Libraries/libraries/pwm.obj"
 "./Libraries/libraries/uart.obj"

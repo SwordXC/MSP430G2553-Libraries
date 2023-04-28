@@ -8,7 +8,6 @@ __interrupt void Port1_ISR(void)
     if(P1IFG & GPIO_PIN_3)
     {
         P1IFG &= ~GPIO_PIN_3;//清中断标志
-        gpio_toggle(GPIO1, GPIO_PIN_0);
     }
 }
 
@@ -23,11 +22,9 @@ __interrupt void UART_Receive_ISR(void)
         uart_putstr(rx_buf);
         if(rx_buf[0] == 'a')
         {
-            gpio_set(GPIO1, GPIO_PIN_0, GPO_HIGH);
         }
         else if(rx_buf[0] == 'b')
         {
-            gpio_set(GPIO1, GPIO_PIN_0, GPO_LOW);
         }
     }
 }
