@@ -2,11 +2,12 @@
 
 Libraries/libraries/pit.obj: ../Libraries/libraries/pit.c
 Libraries/libraries/pit.obj: ../Libraries/libraries/pit.h
-Libraries/libraries/pit.obj: E:/ccs1230/workspace/msp430g2553/Libraries/headfile.h
+Libraries/libraries/pit.obj: ../Libraries/libraries/gpio.h
 Libraries/libraries/pit.obj: E:/ccs1230/ccs/ccs_base/msp430/include/msp430g2553.h
 Libraries/libraries/pit.obj: E:/ccs1230/ccs/ccs_base/msp430/include/in430.h
 Libraries/libraries/pit.obj: E:/ccs1230/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/intrinsics.h
 Libraries/libraries/pit.obj: E:/ccs1230/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/intrinsics_legacy_undefs.h
+Libraries/libraries/pit.obj: E:/ccs1230/workspace/msp430g2553/Libraries/headfile.h
 Libraries/libraries/pit.obj: E:/ccs1230/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/stdint.h
 Libraries/libraries/pit.obj: E:/ccs1230/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/_ti_config.h
 Libraries/libraries/pit.obj: E:/ccs1230/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/linkage.h
@@ -23,17 +24,17 @@ Libraries/libraries/pit.obj: E:/ccs1230/ccs/tools/compiler/ti-cgt-msp430_21.6.1.
 Libraries/libraries/pit.obj: E:/ccs1230/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/_defs.h
 Libraries/libraries/pit.obj: E:/ccs1230/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/machine/_limits.h
 Libraries/libraries/pit.obj: E:/ccs1230/workspace/msp430g2553/Libraries/libraries/adc.h
-Libraries/libraries/pit.obj: E:/ccs1230/workspace/msp430g2553/Libraries/libraries/gpio.h
 Libraries/libraries/pit.obj: E:/ccs1230/workspace/msp430g2553/Libraries/libraries/exit.h
 Libraries/libraries/pit.obj: E:/ccs1230/workspace/msp430g2553/Libraries/libraries/pwm.h
 Libraries/libraries/pit.obj: E:/ccs1230/workspace/msp430g2553/Libraries/libraries/uart.h
 Libraries/libraries/pit.obj: E:/ccs1230/workspace/msp430g2553/Libraries/headfile.h
+Libraries/libraries/pit.obj: E:/ccs1230/workspace/msp430g2553/Project/CODE/touch.h
 
 ../Libraries/libraries/pit.c:
 
 ../Libraries/libraries/pit.h:
 
-E:/ccs1230/workspace/msp430g2553/Libraries/headfile.h:
+../Libraries/libraries/gpio.h:
 
 E:/ccs1230/ccs/ccs_base/msp430/include/msp430g2553.h:
 
@@ -42,6 +43,8 @@ E:/ccs1230/ccs/ccs_base/msp430/include/in430.h:
 E:/ccs1230/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/intrinsics.h:
 
 E:/ccs1230/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/intrinsics_legacy_undefs.h:
+
+E:/ccs1230/workspace/msp430g2553/Libraries/headfile.h:
 
 E:/ccs1230/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/stdint.h:
 
@@ -75,8 +78,6 @@ E:/ccs1230/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include/machine/_limits.h
 
 E:/ccs1230/workspace/msp430g2553/Libraries/libraries/adc.h:
 
-E:/ccs1230/workspace/msp430g2553/Libraries/libraries/gpio.h:
-
 E:/ccs1230/workspace/msp430g2553/Libraries/libraries/exit.h:
 
 E:/ccs1230/workspace/msp430g2553/Libraries/libraries/pwm.h:
@@ -84,4 +85,6 @@ E:/ccs1230/workspace/msp430g2553/Libraries/libraries/pwm.h:
 E:/ccs1230/workspace/msp430g2553/Libraries/libraries/uart.h:
 
 E:/ccs1230/workspace/msp430g2553/Libraries/headfile.h:
+
+E:/ccs1230/workspace/msp430g2553/Project/CODE/touch.h:
 

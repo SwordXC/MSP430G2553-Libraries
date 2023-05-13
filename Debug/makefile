@@ -20,6 +20,7 @@ ORDERED_OBJS += \
 "./Libraries/peripheral/FONT.obj" \
 "./Libraries/peripheral/LCD.obj" \
 "./Project/CODE/loop.obj" \
+"./Project/CODE/touch.obj" \
 "./Project/USER/scr/isr.obj" \
 "./Project/USER/scr/main.obj" \
 "../lnk_msp430g2553.cmd" \
@@ -173,8 +174,8 @@ msp430g2553.txt: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "Libraries\libraries\adc.obj" "Libraries\libraries\exti.obj" "Libraries\libraries\gpio.obj" "Libraries\libraries\i2c.obj" "Libraries\libraries\pit.obj" "Libraries\libraries\pwm.obj" "Libraries\libraries\uart.obj" "Libraries\peripheral\FONT.obj" "Libraries\peripheral\LCD.obj" "Project\CODE\loop.obj" "Project\USER\scr\isr.obj" "Project\USER\scr\main.obj" 
-	-$(RM) "Libraries\libraries\adc.d" "Libraries\libraries\exti.d" "Libraries\libraries\gpio.d" "Libraries\libraries\i2c.d" "Libraries\libraries\pit.d" "Libraries\libraries\pwm.d" "Libraries\libraries\uart.d" "Libraries\peripheral\FONT.d" "Libraries\peripheral\LCD.d" "Project\CODE\loop.d" "Project\USER\scr\isr.d" "Project\USER\scr\main.d" 
+	-$(RM) "Libraries\libraries\adc.obj" "Libraries\libraries\exti.obj" "Libraries\libraries\gpio.obj" "Libraries\libraries\i2c.obj" "Libraries\libraries\pit.obj" "Libraries\libraries\pwm.obj" "Libraries\libraries\uart.obj" "Libraries\peripheral\FONT.obj" "Libraries\peripheral\LCD.obj" "Project\CODE\loop.obj" "Project\CODE\touch.obj" "Project\USER\scr\isr.obj" "Project\USER\scr\main.obj" 
+	-$(RM) "Libraries\libraries\adc.d" "Libraries\libraries\exti.d" "Libraries\libraries\gpio.d" "Libraries\libraries\i2c.d" "Libraries\libraries\pit.d" "Libraries\libraries\pwm.d" "Libraries\libraries\uart.d" "Libraries\peripheral\FONT.d" "Libraries\peripheral\LCD.d" "Project\CODE\loop.d" "Project\CODE\touch.d" "Project\USER\scr\isr.d" "Project\USER\scr\main.d" 
 	-@echo 'Finished clean'
 	-@echo ' '
 

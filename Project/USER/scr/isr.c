@@ -2,15 +2,6 @@
 #include "headfile.h"
 #include "loop.h"
 
-#pragma vector = PORT1_VECTOR
-__interrupt void Port1_ISR(void)
-{
-    if(P1IFG & GPIO_PIN_3)
-    {
-        P1IFG &= ~GPIO_PIN_3;//清中断标志
-    }
-}
-
 #pragma vector = USCIAB0RX_VECTOR
 __interrupt void UART_Receive_ISR(void)
 {
@@ -28,6 +19,14 @@ __interrupt void UART_Receive_ISR(void)
         }
     }
 }
+#pragma vector = PORT1_VECTOR
+__interrupt void Port1_ISR(void)
+{
+    if(P1IFG & GPIO_PIN_3)
+    {
+        P1IFG &= ~GPIO_PIN_3;//清中断标志
+    }
+}
 
 #pragma vector = PORT2_VECTOR
 __interrupt void Port2_ISR(void)
@@ -36,11 +35,32 @@ __interrupt void Port2_ISR(void)
 }
 
 #pragma vector = TIMER0_A1_VECTOR
-__interrupt void Time_Tick(void)
+__interrupt void Time0_Tick(void)
 {
     if(TA0IV == 0x0A)
     {
-        PIT1_handler();
     }
 }
-
+#pragma vector = TIMER1_A1_VECTOR
+__interrupt void Time1_Tick(void)
+{
+    static uint8_t cnt = 0;
+    __bis_SR_register(GIE);//允许中断嵌套
+    switch(TA1IV)
+    {
+    case 0x02://捕捉比较中断1
+        break;
+    case 0x04://捕捉比较中断2
+        break;
+    case 0x0A://溢出中断
+        PIT1_handler();
+        break;
+    default:
+        break;
+    }
+}
+#pragma vector=WDT_VECTOR       // Watch dog Timer interrupt service routine
+__interrupt void WDT_ISR(void)
+{
+    WDT_Ontime();
+}

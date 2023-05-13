@@ -28,6 +28,8 @@ Libraries/libraries/uart.obj: E:/ccs1230/workspace/msp430g2553/Libraries/librari
 Libraries/libraries/uart.obj: E:/ccs1230/workspace/msp430g2553/Libraries/libraries/pit.h
 Libraries/libraries/uart.obj: E:/ccs1230/workspace/msp430g2553/Libraries/libraries/pwm.h
 Libraries/libraries/uart.obj: E:/ccs1230/workspace/msp430g2553/Libraries/libraries/uart.h
+Libraries/libraries/uart.obj: E:/ccs1230/workspace/msp430g2553/Project/CODE/touch.h
+Libraries/libraries/uart.obj: E:/ccs1230/workspace/msp430g2553/Libraries/headfile.h
 
 ../Libraries/libraries/uart.c:
 
@@ -84,4 +86,8 @@ E:/ccs1230/workspace/msp430g2553/Libraries/libraries/pit.h:
 E:/ccs1230/workspace/msp430g2553/Libraries/libraries/pwm.h:
 
 E:/ccs1230/workspace/msp430g2553/Libraries/libraries/uart.h:
+
+E:/ccs1230/workspace/msp430g2553/Project/CODE/touch.h:
+
+E:/ccs1230/workspace/msp430g2553/Libraries/headfile.h:
 

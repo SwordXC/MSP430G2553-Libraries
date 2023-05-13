@@ -8,6 +8,7 @@
 "./Libraries/peripheral/FONT.obj"
 "./Libraries/peripheral/LCD.obj"
 "./Project/CODE/loop.obj"
+"./Project/CODE/touch.obj"
 "./Project/USER/scr/isr.obj"
 "./Project/USER/scr/main.obj"
 "../lnk_msp430g2553.cmd"

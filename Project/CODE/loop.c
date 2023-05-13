@@ -1,37 +1,48 @@
 #include "loop.h"
 unsigned int tick;
 
+void WDT_Ontime(void)
+{
 
+}
 void duty_1ms(void)
 {
 
 }
+
 void duty_10ms(void)
 {
-    static int duty = 0;
-    static int flag = 0;
 
-    if(duty == 1000) flag = 1;
-    else if(duty == 0) flag = 0;
+}
+void duty_25ms(void)
+{
+    TouchIN_Dect();
+    touch_dir touch_v;
+    touch_v = Touch_check();
+    if(touch_v == touch_left)
+    {
+        gpio_set(GPIO1, GPIO_PIN_0, GPO_HIGH);
+    }
+    if(touch_v == touch_right)
+    {
+        gpio_set(GPIO1, GPIO_PIN_0, GPO_LOW);
+    }
+    if(touch_v == touch_no)
+    {
 
-    if(flag == 0)
-    {
-        duty += 10;
     }
-    else
-    {
-        duty -= 10;
-    }
-    pwm_duty(GPIO2, GPIO_PIN_5,duty);
 
 }
 void duty_100ms(void)
 {
 
+
+
 }
+
 void duty_1000ms(void)
 {
-    //gpio_toggle(GPIO1, GPIO_PIN_0);
+
 
 }
 
@@ -42,6 +53,10 @@ void PIT1_handler(void)
     if(tick%10 == 0)
     {
         duty_10ms();
+    }
+    if(tick%25 == 0)
+    {
+        duty_25ms();
     }
     if(tick%100 == 0)
     {

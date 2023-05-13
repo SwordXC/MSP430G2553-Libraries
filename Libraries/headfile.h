@@ -11,4 +11,5 @@
 #include "pit.h"
 #include "pwm.h"
 #include "uart.h"
+#include "touch.h"
 #endif

@@ -29,6 +29,7 @@ Project/USER/scr/isr.obj: E:/ccs1230/workspace/msp430g2553/Libraries/libraries/p
 Project/USER/scr/isr.obj: E:/ccs1230/workspace/msp430g2553/Libraries/libraries/pwm.h
 Project/USER/scr/isr.obj: E:/ccs1230/workspace/msp430g2553/Libraries/libraries/uart.h
 Project/USER/scr/isr.obj: E:/ccs1230/workspace/msp430g2553/Libraries/headfile.h
+Project/USER/scr/isr.obj: E:/ccs1230/workspace/msp430g2553/Project/CODE/touch.h
 Project/USER/scr/isr.obj: E:/ccs1230/workspace/msp430g2553/Project/CODE/loop.h
 
 ../Project/USER/scr/isr.c:
@@ -88,6 +89,8 @@ E:/ccs1230/workspace/msp430g2553/Libraries/libraries/pwm.h:
 E:/ccs1230/workspace/msp430g2553/Libraries/libraries/uart.h:
 
 E:/ccs1230/workspace/msp430g2553/Libraries/headfile.h:
+
+E:/ccs1230/workspace/msp430g2553/Project/CODE/touch.h:
 
 E:/ccs1230/workspace/msp430g2553/Project/CODE/loop.h:
 

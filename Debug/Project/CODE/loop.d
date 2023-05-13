@@ -29,6 +29,7 @@ Project/CODE/loop.obj: E:/ccs1230/workspace/msp430g2553/Libraries/libraries/pit.
 Project/CODE/loop.obj: E:/ccs1230/workspace/msp430g2553/Libraries/libraries/pwm.h
 Project/CODE/loop.obj: E:/ccs1230/workspace/msp430g2553/Libraries/libraries/uart.h
 Project/CODE/loop.obj: E:/ccs1230/workspace/msp430g2553/Libraries/headfile.h
+Project/CODE/loop.obj: E:/ccs1230/workspace/msp430g2553/Project/CODE/touch.h
 
 ../Project/CODE/loop.c:
 
@@ -87,4 +88,6 @@ E:/ccs1230/workspace/msp430g2553/Libraries/libraries/pwm.h:
 E:/ccs1230/workspace/msp430g2553/Libraries/libraries/uart.h:
 
 E:/ccs1230/workspace/msp430g2553/Libraries/headfile.h:
+
+E:/ccs1230/workspace/msp430g2553/Project/CODE/touch.h:
 
