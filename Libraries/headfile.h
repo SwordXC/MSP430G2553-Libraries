@@ -12,4 +12,8 @@
 #include "pwm.h"
 #include "uart.h"
 #include "touch.h"
+#include "HT1621.h"
+#include "LCD.h"
+#include "TCA6416A.h"
+#include "knob.h"
 #endif

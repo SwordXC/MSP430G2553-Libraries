@@ -32,11 +32,25 @@ void duty_25ms(void)
 
     }
 
+
+
 }
 void duty_100ms(void)
 {
-
-
+//    Knob_dir Knob_v;
+//    static int num = 0;
+//    Knob_v = Knob_check();
+//    if(Knob_v == Knob_D)
+//    {
+//        num++;
+//        if(num > 100) num = 100;
+//    }
+//    if(Knob_v == Knob_U)
+//    {
+//        num--;
+//        if(num < 0) num = 0;
+//    }
+//    uart_putint(num);
 
 }
 

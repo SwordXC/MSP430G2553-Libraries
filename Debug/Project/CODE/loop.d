@@ -30,6 +30,10 @@ Project/CODE/loop.obj: E:/ccs1230/workspace/msp430g2553/Libraries/libraries/pwm.
 Project/CODE/loop.obj: E:/ccs1230/workspace/msp430g2553/Libraries/libraries/uart.h
 Project/CODE/loop.obj: E:/ccs1230/workspace/msp430g2553/Libraries/headfile.h
 Project/CODE/loop.obj: E:/ccs1230/workspace/msp430g2553/Project/CODE/touch.h
+Project/CODE/loop.obj: E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/HT1621.h
+Project/CODE/loop.obj: E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/LCD.h
+Project/CODE/loop.obj: E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/TCA6416A.h
+Project/CODE/loop.obj: E:/ccs1230/workspace/msp430g2553/Project/CODE/knob.h
 
 ../Project/CODE/loop.c:
 
@@ -90,4 +94,12 @@ E:/ccs1230/workspace/msp430g2553/Libraries/libraries/uart.h:
 E:/ccs1230/workspace/msp430g2553/Libraries/headfile.h:
 
 E:/ccs1230/workspace/msp430g2553/Project/CODE/touch.h:
+
+E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/HT1621.h:
+
+E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/LCD.h:
+
+E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/TCA6416A.h:
+
+E:/ccs1230/workspace/msp430g2553/Project/CODE/knob.h:
 

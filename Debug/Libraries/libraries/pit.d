@@ -29,6 +29,10 @@ Libraries/libraries/pit.obj: E:/ccs1230/workspace/msp430g2553/Libraries/librarie
 Libraries/libraries/pit.obj: E:/ccs1230/workspace/msp430g2553/Libraries/libraries/uart.h
 Libraries/libraries/pit.obj: E:/ccs1230/workspace/msp430g2553/Libraries/headfile.h
 Libraries/libraries/pit.obj: E:/ccs1230/workspace/msp430g2553/Project/CODE/touch.h
+Libraries/libraries/pit.obj: E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/HT1621.h
+Libraries/libraries/pit.obj: E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/LCD.h
+Libraries/libraries/pit.obj: E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/TCA6416A.h
+Libraries/libraries/pit.obj: E:/ccs1230/workspace/msp430g2553/Project/CODE/knob.h
 
 ../Libraries/libraries/pit.c:
 
@@ -87,4 +91,12 @@ E:/ccs1230/workspace/msp430g2553/Libraries/libraries/uart.h:
 E:/ccs1230/workspace/msp430g2553/Libraries/headfile.h:
 
 E:/ccs1230/workspace/msp430g2553/Project/CODE/touch.h:
+
+E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/HT1621.h:
+
+E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/LCD.h:
+
+E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/TCA6416A.h:
+
+E:/ccs1230/workspace/msp430g2553/Project/CODE/knob.h:
 

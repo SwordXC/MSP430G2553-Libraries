@@ -44,8 +44,7 @@ __interrupt void Time0_Tick(void)
 #pragma vector = TIMER1_A1_VECTOR
 __interrupt void Time1_Tick(void)
 {
-    static uint8_t cnt = 0;
-    __bis_SR_register(GIE);//允许中断嵌套
+    __bis_SR_register(GIE);
     switch(TA1IV)
     {
     case 0x02://捕捉比较中断1
