@@ -34,6 +34,8 @@ Project/USER/scr/isr.obj: E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/
 Project/USER/scr/isr.obj: E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/LCD.h
 Project/USER/scr/isr.obj: E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/TCA6416A.h
 Project/USER/scr/isr.obj: E:/ccs1230/workspace/msp430g2553/Project/CODE/knob.h
+Project/USER/scr/isr.obj: E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/OLED.h
+Project/USER/scr/isr.obj: E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/FONT.h
 Project/USER/scr/isr.obj: E:/ccs1230/workspace/msp430g2553/Project/CODE/loop.h
 
 ../Project/USER/scr/isr.c:
@@ -103,6 +105,10 @@ E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/LCD.h:
 E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/TCA6416A.h:
 
 E:/ccs1230/workspace/msp430g2553/Project/CODE/knob.h:
+
+E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/OLED.h:
+
+E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/FONT.h:
 
 E:/ccs1230/workspace/msp430g2553/Project/CODE/loop.h:
 

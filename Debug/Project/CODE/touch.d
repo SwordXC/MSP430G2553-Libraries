@@ -34,6 +34,8 @@ Project/CODE/touch.obj: E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/HT
 Project/CODE/touch.obj: E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/LCD.h
 Project/CODE/touch.obj: E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/TCA6416A.h
 Project/CODE/touch.obj: E:/ccs1230/workspace/msp430g2553/Project/CODE/knob.h
+Project/CODE/touch.obj: E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/OLED.h
+Project/CODE/touch.obj: E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/FONT.h
 
 ../Project/CODE/touch.c:
 
@@ -102,4 +104,8 @@ E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/LCD.h:
 E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/TCA6416A.h:
 
 E:/ccs1230/workspace/msp430g2553/Project/CODE/knob.h:
+
+E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/OLED.h:
+
+E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/FONT.h:
 

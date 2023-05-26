@@ -26,7 +26,8 @@ Knob_dir Knob_check(void)
         if(res_dif >= res_threshold)
         {
             res_last = res;
-            return Knob_D;
+            Knob_value = Knob_D;
+            return Knob_value;
         }
     }
     else if(res_dif < 0)
@@ -35,12 +36,14 @@ Knob_dir Knob_check(void)
         if(res_dif >= res_threshold)
         {
             res_last = res;
-            return Knob_U;
+            Knob_value = Knob_U;
+            return Knob_value;
         }
     }
     else
     {
-        return Knob_N;
+        Knob_value = Knob_N;
+        return Knob_value;
     }
 
 }

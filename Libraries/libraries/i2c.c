@@ -6,6 +6,7 @@
  */
 #include"MSP430G2553.h"
 #include"I2C.h"
+
 #ifdef HARD_I2C     //Begin of Hard I2C
 
 #define TX_STATE                        0                   /*I2C发送状态*/
@@ -34,7 +35,7 @@ void I2C_Init()
       UCB0CTL1 |= UCSWRST;                                           // 软件复位状态
       UCB0CTL0 = UCMST + UCMODE_3 + UCSYNC;   // 同步通信I2C主机状态
       UCB0CTL1 = UCSSEL_2 + UCSWRST;                     // 使用SMCLK，软件复位状态
-      UCB0BR0 =I2C_BAUDRATE_DIV ;                          // 除了分频系数，实际波特率还与SMCLK有关
+      UCB0BR0 = 0x1A ;                          // 除了分频系数，实际波特率还与SMCLK有关
       UCB0BR1 = 0;                                                      //这一级别的分频一般不启用
       UCB0I2CSA = SLAVE_ADDR;                               // I2C从机地址，可在宏定义中修改
       UCB0CTL1 &= ~UCSWRST;                                     // 开启I2C
@@ -384,3 +385,8 @@ unsigned char I2C_RxFrame(unsigned char *p_Tx,unsigned char num)
     return 1;
 }
 #endif      //End of Soft I2C
+
+
+
+
+

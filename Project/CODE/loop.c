@@ -22,10 +22,12 @@ void duty_25ms(void)
     if(touch_v == touch_left)
     {
         gpio_set(GPIO1, GPIO_PIN_0, GPO_HIGH);
+        gpio_set(GPIO2, GPIO_PIN_4, GPO_HIGH);
     }
     if(touch_v == touch_right)
     {
         gpio_set(GPIO1, GPIO_PIN_0, GPO_LOW);
+        gpio_set(GPIO2, GPIO_PIN_4, GPO_LOW);
     }
     if(touch_v == touch_no)
     {
@@ -35,8 +37,10 @@ void duty_25ms(void)
 
 
 }
+
 void duty_100ms(void)
 {
+
 //    Knob_dir Knob_v;
 //    static int num = 0;
 //    Knob_v = Knob_check();

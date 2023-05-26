@@ -16,4 +16,3 @@ extern unsigned char I2C_TxFrame(unsigned char *p_Tx,unsigned char num);
 extern unsigned char I2C_RxFrame(unsigned char *p_Tx,unsigned char num);
 
 #endif /* I2C_H_ */
-

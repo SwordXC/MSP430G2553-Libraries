@@ -33,6 +33,8 @@ Libraries/libraries/pit.obj: E:/ccs1230/workspace/msp430g2553/Libraries/peripher
 Libraries/libraries/pit.obj: E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/LCD.h
 Libraries/libraries/pit.obj: E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/TCA6416A.h
 Libraries/libraries/pit.obj: E:/ccs1230/workspace/msp430g2553/Project/CODE/knob.h
+Libraries/libraries/pit.obj: E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/OLED.h
+Libraries/libraries/pit.obj: E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/FONT.h
 
 ../Libraries/libraries/pit.c:
 
@@ -99,4 +101,8 @@ E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/LCD.h:
 E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/TCA6416A.h:
 
 E:/ccs1230/workspace/msp430g2553/Project/CODE/knob.h:
+
+E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/OLED.h:
+
+E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/FONT.h:
 

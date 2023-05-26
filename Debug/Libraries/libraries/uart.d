@@ -34,6 +34,8 @@ Libraries/libraries/uart.obj: E:/ccs1230/workspace/msp430g2553/Libraries/periphe
 Libraries/libraries/uart.obj: E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/LCD.h
 Libraries/libraries/uart.obj: E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/TCA6416A.h
 Libraries/libraries/uart.obj: E:/ccs1230/workspace/msp430g2553/Project/CODE/knob.h
+Libraries/libraries/uart.obj: E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/OLED.h
+Libraries/libraries/uart.obj: E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/FONT.h
 
 ../Libraries/libraries/uart.c:
 
@@ -102,4 +104,8 @@ E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/LCD.h:
 E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/TCA6416A.h:
 
 E:/ccs1230/workspace/msp430g2553/Project/CODE/knob.h:
+
+E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/OLED.h:
+
+E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/FONT.h:
 

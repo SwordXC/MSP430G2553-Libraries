@@ -16,4 +16,6 @@
 #include "LCD.h"
 #include "TCA6416A.h"
 #include "knob.h"
+#include "OLED.h"
+#include "FONT.h"
 #endif
