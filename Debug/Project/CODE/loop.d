@@ -36,6 +36,7 @@ Project/CODE/loop.obj: E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/TCA
 Project/CODE/loop.obj: E:/ccs1230/workspace/msp430g2553/Project/CODE/knob.h
 Project/CODE/loop.obj: E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/OLED.h
 Project/CODE/loop.obj: E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/FONT.h
+Project/CODE/loop.obj: ../Project/CODE/menu.h
 
 ../Project/CODE/loop.c:
 
@@ -108,4 +109,6 @@ E:/ccs1230/workspace/msp430g2553/Project/CODE/knob.h:
 E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/OLED.h:
 
 E:/ccs1230/workspace/msp430g2553/Libraries/peripheral/FONT.h:
+
+../Project/CODE/menu.h:
 

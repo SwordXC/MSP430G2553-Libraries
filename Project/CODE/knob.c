@@ -4,7 +4,7 @@ static int res = 0;
 static int res_last = 0;
 static int res_dif = 0;
 
-uint8_t res_threshold = 25;
+uint8_t res_threshold = 15;
 
 void Knob_init(void)
 {
@@ -14,11 +14,13 @@ void Knob_init(void)
     res = adc_get();
     res_last = res;
 }
-
+void Knob_Dect(void)
+{
+    res = adc_get();
+}
 Knob_dir Knob_check(void)
 {
     Knob_dir Knob_value;
-    res = adc_get();
 //    uart_putint(res);
     res_dif = res - res_last;
     if(res_dif > 0)

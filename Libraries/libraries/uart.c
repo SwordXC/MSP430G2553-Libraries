@@ -21,27 +21,29 @@ void uart_init(uint32_t baud)
     switch(baud)
     {
     case 9600:
-        UCA0BR0 = 0x68;
-        UCA0BR1 = 0x00;
-        UCA0MCTL = 1 << 1;
-        break;
-    case 19200:
-        UCA0BR0 = 0x34;
-        UCA0BR1 = 0x00;
-        break;
-    case 38400:
-        UCA0BR0 = 0x1A;
-        UCA0BR1 = 0x00;
-        break;
-    case 56000:
-        UCA0BR0 = 0x11;
-        UCA0BR1 = 0x00;
-        UCA0MCTL = 7 << 1;
-        break;
-    case 115200:
-        UCA0BR0 = 0x08;
+        UCA0BR0 = 0x682;
         UCA0BR1 = 0x00;
         UCA0MCTL = 6 << 1;
+        break;
+    case 19200:
+        UCA0BR0 = 0x341;
+        UCA0BR1 = 0x00;
+        UCA0MCTL = 2 << 1;
+        break;
+    case 38400:
+        UCA0BR0 = 0x1A0;
+        UCA0BR1 = 0x00;
+        UCA0MCTL = 6 << 1;
+        break;
+    case 56000:
+        UCA0BR0 = 0x11D;
+        UCA0BR1 = 0x00;
+        UCA0MCTL = 6 << 1;
+        break;
+    case 115200:
+        UCA0BR0 = 0x8A;
+        UCA0BR1 = 0x00;
+        UCA0MCTL = 7 << 1;
         break;
     }
 

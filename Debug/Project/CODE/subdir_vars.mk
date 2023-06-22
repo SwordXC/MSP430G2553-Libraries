@@ -8,31 +8,37 @@ SHELL = cmd.exe
 C_SRCS += \
 ../Project/CODE/knob.c \
 ../Project/CODE/loop.c \
+../Project/CODE/menu.c \
 ../Project/CODE/touch.c 
 
 C_DEPS += \
 ./Project/CODE/knob.d \
 ./Project/CODE/loop.d \
+./Project/CODE/menu.d \
 ./Project/CODE/touch.d 
 
 OBJS += \
 ./Project/CODE/knob.obj \
 ./Project/CODE/loop.obj \
+./Project/CODE/menu.obj \
 ./Project/CODE/touch.obj 
 
 OBJS__QUOTED += \
 "Project\CODE\knob.obj" \
 "Project\CODE\loop.obj" \
+"Project\CODE\menu.obj" \
 "Project\CODE\touch.obj" 
 
 C_DEPS__QUOTED += \
 "Project\CODE\knob.d" \
 "Project\CODE\loop.d" \
+"Project\CODE\menu.d" \
 "Project\CODE\touch.d" 
 
 C_SRCS__QUOTED += \
 "../Project/CODE/knob.c" \
 "../Project/CODE/loop.c" \
+"../Project/CODE/menu.c" \
 "../Project/CODE/touch.c" 
 
 

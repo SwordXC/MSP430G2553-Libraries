@@ -9,8 +9,8 @@
 void InitSystemClock()
 {
     /*配置DCO频率为1MHZ*/
-    DCOCTL = CALDCO_1MHZ;
-    BCSCTL1 = CALBC1_1MHZ;
+    DCOCTL = CALDCO_16MHZ;
+    BCSCTL1 = CALBC1_16MHZ;
     /*配置SMCLK的时钟源为DCO*/
     BCSCTL2 &= ~SELS;
     /*SMCLK的分频系数置为1*/
@@ -26,7 +26,7 @@ void tim_interrupt_init_ms (TIM_type tim_pin,int time)
         /*设置工作模式为UP Mode*/
         TA0CTL |= MC_1;
         /*设置定时间隔*/
-        TA0CCR0 = time*1000-1;
+        TA0CCR0 = time*16000-1;
         /*开启TAIFG中断*/
         TA0CTL |= TAIE;
     }
@@ -37,7 +37,7 @@ void tim_interrupt_init_ms (TIM_type tim_pin,int time)
         /*设置工作模式为Continous up Mode*/
         TA1CTL |= MC_1;
         /*设置定时间隔*/
-        TA1CCR0 = time*1000-1;
+        TA1CCR0 = time*16000-1;
         //开启TAIFG中断
         TA1CTL |= TAIE;
     }

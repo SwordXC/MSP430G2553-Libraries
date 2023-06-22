@@ -12,6 +12,7 @@
 "./Libraries/peripheral/TCA6416A.obj"
 "./Project/CODE/knob.obj"
 "./Project/CODE/loop.obj"
+"./Project/CODE/menu.obj"
 "./Project/CODE/touch.obj"
 "./Project/USER/scr/isr.obj"
 "./Project/USER/scr/main.obj"

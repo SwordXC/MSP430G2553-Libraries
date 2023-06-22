@@ -65,8 +65,35 @@ void oled_wrcmd(uint8_t cmd)
 void oled_hexascii(uint16_t hex,int8_t * Print)
 {
     uint8_t hexcheck ;
+    uint16_t hex2;
     uint8_t TEMP ;
-    TEMP = 6 ;
+    uint8_t num=0;
+    hex2 = hex;
+    while(hex2!=0)
+    {
+        hex2=hex2/10;
+        num++;
+    }
+
+    switch(num)
+    {
+        case 1:
+            TEMP = 2;
+            break;
+        case 2:
+            TEMP = 3;
+            break;
+        case 3:
+            TEMP = 4;
+            break;
+        case 4:
+            TEMP = 5;
+            break;
+        case 5:
+            TEMP = 6;
+            break;
+    }
+
     Print[TEMP ]='\0';
     while(TEMP)
     {
@@ -270,7 +297,7 @@ void oled_p8x16str(uint8_t x,uint8_t y,const int8_t ch[])
 //  @since      v1.0
 //  Sample usage:
 //-------------------------------------------------------------------------------------------------------------------
-void oled_uint16_t(uint8_t x, uint8_t y, uint16_t num)
+void oled_uint16(uint8_t x, uint8_t y, uint16_t num)
 {
     int8_t ch[7];
 
@@ -289,7 +316,7 @@ void oled_uint16_t(uint8_t x, uint8_t y, uint16_t num)
 //  @since      v1.0
 //  Sample usage:
 //-------------------------------------------------------------------------------------------------------------------
-void oled_int16_t(uint8_t x, uint8_t y, int16_t num)
+void oled_int16(uint8_t x, uint8_t y, int16_t num)
 {
     int8_t ch[7];
     if(num<0)   {num = -num;oled_p6x8str(x, y, "-");}
@@ -311,7 +338,7 @@ void oled_int16_t(uint8_t x, uint8_t y, int16_t num)
 //  Sample usage:           oled_printf_int32_t(0,0,x,5);//x可以为int32_t uint16_t int16_t uint8_t int8_t类型
 //  Sample usage:           负数会显示一个 ‘-’号   正数显示一个空格
 //-------------------------------------------------------------------------------------------------------------------
-void oled_printf_int32_t(uint16_t x,uint16_t y,int32_t dat,uint8_t num)
+void oled_printf_int32(uint16_t x,uint16_t y,int32_t dat,uint8_t num)
 {
     int8_t    buff[34];
     uint8_t   length;

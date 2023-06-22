@@ -44,7 +44,7 @@ __interrupt void Time0_Tick(void)
 #pragma vector = TIMER1_A1_VECTOR
 __interrupt void Time1_Tick(void)
 {
-    __bis_SR_register(GIE);
+    //__bis_SR_register(GIE);
     switch(TA1IV)
     {
     case 0x02://²¶×½±È½ÏÖÐ¶Ï1

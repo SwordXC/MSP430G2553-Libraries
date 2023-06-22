@@ -24,6 +24,7 @@ ORDERED_OBJS += \
 "./Libraries/peripheral/TCA6416A.obj" \
 "./Project/CODE/knob.obj" \
 "./Project/CODE/loop.obj" \
+"./Project/CODE/menu.obj" \
 "./Project/CODE/touch.obj" \
 "./Project/USER/scr/isr.obj" \
 "./Project/USER/scr/main.obj" \
@@ -150,10 +151,10 @@ EXE_OUTPUTS__QUOTED += \
 "msp430g2553.out" \
 
 BIN_OUTPUTS += \
-msp430g2553.txt \
+msp430g2553.hex \
 
 BIN_OUTPUTS__QUOTED += \
-"msp430g2553.txt" \
+"msp430g2553.hex" \
 
 
 # All Target
@@ -168,19 +169,25 @@ msp430g2553.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 
-msp430g2553.txt: $(EXE_OUTPUTS)
+msp430g2553.hex: $(EXE_OUTPUTS)
 	@echo 'Building secondary target: "$@"'
 	@echo 'Invoking: MSP430 Hex Utility'
-	"E:/ccs1230/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/hex430" --memwidth=8 --romwidth=8 --diag_wrap=off --ti_txt -o "msp430g2553.txt" $(EXE_OUTPUTS__QUOTED)
+	"E:/ccs1230/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/hex430" --memwidth=16 --romwidth=16 --diag_wrap=off --intel -o "msp430g2553.hex" $(EXE_OUTPUTS__QUOTED)
 	@echo 'Finished building secondary target: "$@"'
 	@echo ' '
+	@$(MAKE) --no-print-directory post-build
 
 # Other Targets
 clean:
 	-$(RM) $(BIN_OUTPUTS__QUOTED)$(EXE_OUTPUTS__QUOTED)
-	-$(RM) "Libraries\libraries\adc.obj" "Libraries\libraries\exti.obj" "Libraries\libraries\gpio.obj" "Libraries\libraries\i2c.obj" "Libraries\libraries\pit.obj" "Libraries\libraries\pwm.obj" "Libraries\libraries\uart.obj" "Libraries\peripheral\FONT.obj" "Libraries\peripheral\HT1621.obj" "Libraries\peripheral\LCD.obj" "Libraries\peripheral\OLED.obj" "Libraries\peripheral\TCA6416A.obj" "Project\CODE\knob.obj" "Project\CODE\loop.obj" "Project\CODE\touch.obj" "Project\USER\scr\isr.obj" "Project\USER\scr\main.obj" 
-	-$(RM) "Libraries\libraries\adc.d" "Libraries\libraries\exti.d" "Libraries\libraries\gpio.d" "Libraries\libraries\i2c.d" "Libraries\libraries\pit.d" "Libraries\libraries\pwm.d" "Libraries\libraries\uart.d" "Libraries\peripheral\FONT.d" "Libraries\peripheral\HT1621.d" "Libraries\peripheral\LCD.d" "Libraries\peripheral\OLED.d" "Libraries\peripheral\TCA6416A.d" "Project\CODE\knob.d" "Project\CODE\loop.d" "Project\CODE\touch.d" "Project\USER\scr\isr.d" "Project\USER\scr\main.d" 
+	-$(RM) "Libraries\libraries\adc.obj" "Libraries\libraries\exti.obj" "Libraries\libraries\gpio.obj" "Libraries\libraries\i2c.obj" "Libraries\libraries\pit.obj" "Libraries\libraries\pwm.obj" "Libraries\libraries\uart.obj" "Libraries\peripheral\FONT.obj" "Libraries\peripheral\HT1621.obj" "Libraries\peripheral\LCD.obj" "Libraries\peripheral\OLED.obj" "Libraries\peripheral\TCA6416A.obj" "Project\CODE\knob.obj" "Project\CODE\loop.obj" "Project\CODE\menu.obj" "Project\CODE\touch.obj" "Project\USER\scr\isr.obj" "Project\USER\scr\main.obj" 
+	-$(RM) "Libraries\libraries\adc.d" "Libraries\libraries\exti.d" "Libraries\libraries\gpio.d" "Libraries\libraries\i2c.d" "Libraries\libraries\pit.d" "Libraries\libraries\pwm.d" "Libraries\libraries\uart.d" "Libraries\peripheral\FONT.d" "Libraries\peripheral\HT1621.d" "Libraries\peripheral\LCD.d" "Libraries\peripheral\OLED.d" "Libraries\peripheral\TCA6416A.d" "Project\CODE\knob.d" "Project\CODE\loop.d" "Project\CODE\menu.d" "Project\CODE\touch.d" "Project\USER\scr\isr.d" "Project\USER\scr\main.d" 
 	-@echo 'Finished clean'
+	-@echo ' '
+
+post-build:
+	-@echo 'Create flash image: Intel-HEX'
+	-"E:/ccs1230/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/bin/hex430" -i "msp430g2553.out" -o "msp430g2553.hex" -order MS -romwidth 32
 	-@echo ' '
 
 secondary-outputs: $(BIN_OUTPUTS)
